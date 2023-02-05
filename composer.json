@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.3",
         "guzzlehttp/guzzle": "^7.4",
         "illuminate/contracts": "^9.0",
         "psr/http-client": "^1.0",
