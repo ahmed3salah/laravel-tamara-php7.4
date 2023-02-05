@@ -7,10 +7,15 @@ use AlazziAz\Tamara\Tamara\Notification\NotificationService;
 
 class Tamara
 {
+    protected NotificationService $notificationService;
+    protected Client $client;
+
     public function __construct(
-        protected Client $client,
-        protected NotificationService $notificationService
+        Client $client,
+        NotificationService $notificationService
     ) {
+        $this->client = $client;
+        $this->notificationService = $notificationService;
     }
 
     public function client(): Client
